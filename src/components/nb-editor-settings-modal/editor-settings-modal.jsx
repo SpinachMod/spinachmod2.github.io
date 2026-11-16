@@ -27,7 +27,7 @@ import KeyInput from './key-input.jsx';
 import {defaultKeybinds} from '../../lib/nb-keybinds.js';
 import {setTheme} from '../../reducers/theme.js';
 import {persistTheme, detectTheme} from '../../lib/themes/themePersistance.js';
-import {GUI_DARK, GUI_LIGHT, Theme, BLOCKS_CUSTOM} from '../../lib/themes/index.js';
+import {GUI_DARK, GUI_MIDNIGHT, GUI_LIGHT, Theme, BLOCKS_CUSTOM} from '../../lib/themes/index.js';
 import {
     BLOCK_COLOR_CATEGORIES,
     applyBlockColors,
@@ -734,19 +734,6 @@ const EditorSettingsModal = props => {
                             />
                         </button>
                     </p>
-                    <BooleanSetting
-                        value={props.theme.gui === GUI_DARK}
-                        label={<FormattedMessage
-                            id="nb.editorSettings.darkMode"
-                            defaultMessage="Dark mode"
-                        />}
-                        help={<FormattedMessage
-                            id="nb.editorSettings.darkModeHelp"
-                            defaultMessage="Turns the website dark to make it easier on the eyes."
-                        />}
-                        // eslint-disable-next-line react/jsx-no-bind
-                        onChange={() => props.onChangeTheme(props.theme.set('gui', props.theme.gui === GUI_DARK ? GUI_LIGHT : GUI_DARK))}
-                    />
                     <Setting
                         help={<FormattedMessage
                             id="nb.editorSettings.labelContrastThresholdHelp"
