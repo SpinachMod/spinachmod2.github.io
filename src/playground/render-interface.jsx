@@ -87,7 +87,7 @@ const Footer = () => (
                 <FormattedMessage
                     // eslint-disable-next-line max-len
                     defaultMessage="{APP_NAME} is not affiliated with Scratch, the Scratch Team, or the Scratch Foundation."
-                    description="Disclaimer that NitroBolt is not connected to Scratch"
+                    description="Disclaimer that SpinachMod is not connected to Scratch"
                     id="tw.footer.disclaimer"
                     values={{
                         APP_NAME
@@ -130,25 +130,25 @@ const Footer = () => (
                         {/* Do not translate */}
                         {'NitroBolt Desktop'}
                     </a>
-                    <a href="https://packager.nitrobolt.org/">
+                    <a href="https://spinachmod.github.io/packager/">
                         {/* Do not translate */}
-                        {'NitroBolt Packager'}
+                        {'SpinachMod Packager'}
                     </a>
-                    <a href="https://docs.nitrobolt.org/website/embedding">
+                    <a href="https://spinachmod.github.io/docs/website/embedding">
                         <FormattedMessage
                             defaultMessage="Embedding"
                             description="Link in footer to embedding documentation for embedding link"
                             id="tw.footer.embed"
                         />
                     </a>
-                    <a href="https://docs.nitrobolt.org/website/url-parameters">
+                    <a href="https://spinachmod.github.io/docs/website/url-parameters">
                         <FormattedMessage
                             defaultMessage="URL Parameters"
                             description="Link in footer to URL parameters documentation"
                             id="tw.footer.parameters"
                         />
                     </a>
-                    <a href="https://docs.nitrobolt.org/">
+                    <a href="https://spinachmod.github.io/docs">
                         <FormattedMessage
                             defaultMessage="Documentation"
                             description="Link in footer to additional documentation"
@@ -157,14 +157,14 @@ const Footer = () => (
                     </a>
                 </div>
                 <div className={styles.footerSection}>
-                    <a href="https://scratch.mit.edu/users/CubesterYT/#comments">
+                    <a href="https://facebook.com/CrystalMae1990">
                         <FormattedMessage
                             defaultMessage="Feedback & Bugs"
                             description="Link to feedback/bugs page"
                             id="tw.feedback"
                         />
                     </a>
-                    <a href="https://github.com/Nitro-Bolt/">
+                    <a href="https://github.com/SpinachMod/">
                         <FormattedMessage
                             defaultMessage="Source Code"
                             description="Link to source code"
@@ -275,8 +275,8 @@ class Interface extends React.Component {
                                 <p>
                                     <FormattedMessage
                                         // eslint-disable-next-line max-len
-                                        defaultMessage="{APP_NAME} is a TurboWarp mod with many changes that builds upon and enhances TurboWarp with many useful features. We do not guarantee projects made here will be backwards compatible with Scratch or TurboWarp."
-                                        description="Description of NitroBolt on the homepage"
+                                        defaultMessage="{APP_NAME} is a NitroBolt mod with many changes that builds upon and enhances NitroBolt with many useful features. We do not guarantee projects made here will be backwards compatible with Scratch or TurboWarp."
+                                        description="Description of SpinachMod on the homepage"
                                         id="tw.home.description"
                                         values={{
                                             APP_NAME
@@ -285,7 +285,7 @@ class Interface extends React.Component {
                                 </p>
                             </div>
                             <div className={styles.section}>
-                                <FeaturedProjects studio="27205657" />
+                                <FeaturedProjects studio="50866201" />
                             </div>
                         </React.Fragment>
                     ) : null}
