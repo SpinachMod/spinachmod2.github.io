@@ -95,7 +95,7 @@ class ExtensionPackManager extends React.Component {
                         <div className={styles.packHelp}>
                             Find extension packs at{' '}
                             <a
-                                href="https://potentiamod.github.io/extensions/ext-packs.html/"
+                                href="https://potentiamod.github.io/extensions/ext-packs.html"
                                 rel="noreferrer"
                                 target="_blank"
                             >
