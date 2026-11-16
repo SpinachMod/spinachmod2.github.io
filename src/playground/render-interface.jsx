@@ -47,7 +47,7 @@ import styles from './interface.css';
 
 const messages = defineMessages({
     defaultTitle: {
-        defaultMessage: 'Beyond Limitations', // TODO: Temporary?
+        defaultMessage: 'The World of Fun and Games!', // TODO: Temporary?
         description: 'Title of homepage',
         id: 'tw.guiDefaultTitle'
     }
