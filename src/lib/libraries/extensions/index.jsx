@@ -403,7 +403,7 @@ export default [
             />
         ),
         extensionId: 'tw',
-        iconURL: nbIcon,
+        iconURL: smIcon,
         description: (
             <FormattedMessage
                 defaultMessage="Weird new blocks."
