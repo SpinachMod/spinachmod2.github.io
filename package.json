@@ -93,7 +93,7 @@
     "scratch-audio": "github:TurboWarp/scratch-audio#develop",
     "scratch-blocks": "github:Nitro-Bolt/scratch-blocks#develop-builds",
     "scratch-l10n": "github:Nitro-Bolt/scratch-l10n#develop",
-    "scratch-paint": "github:Nitro-Bolt/scratch-paint#develop",
+    "scratch-paint": "github:PotentiaMod/scratch-paint#develop",
     "scratch-render": "github:Nitro-Bolt/scratch-render#develop",
     "scratch-vm": "github:Nitro-Bolt/scratch-vm#develop",
     "style-loader": "^0.23.0",
