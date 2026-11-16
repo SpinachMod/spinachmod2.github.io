@@ -12,6 +12,7 @@ import * as accentCustom from './accent/custom';
 
 import * as guiLight from './gui/light';
 import * as guiDark from './gui/dark';
+import * as guiMidight from './gui/midnight';
 
 import * as blocksThree from './blocks/three';
 import * as blocksHighContrast from './blocks/high-contrast';
@@ -41,9 +42,11 @@ const ACCENT_DEFAULT = ACCENT_GREEN;
 
 const GUI_LIGHT = 'light';
 const GUI_DARK = 'dark';
+const GUI_MIDNIGHT = 'midnight';
 const GUI_MAP = {
     [GUI_LIGHT]: guiLight,
-    [GUI_DARK]: guiDark
+    [GUI_DARK]: guiDark,
+    [GUI_MIDNIGHT]: guiMidight
 };
 const GUI_DEFAULT = GUI_LIGHT;
 
@@ -187,6 +190,7 @@ export {
 
     GUI_LIGHT,
     GUI_DARK,
+    GUI_MIDNIGHT,
     GUI_MAP,
 
     BLOCKS_THREE,
