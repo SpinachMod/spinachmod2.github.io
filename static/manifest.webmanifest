@@ -1,7 +1,7 @@
 {
-  "short_name": "NitroBolt",
-  "name": "NitroBolt",
-  "description": "A TurboWarp mod with many changes that builds upon and enhances TurboWarp with many useful features.",
+  "short_name": "SpinachMod",
+  "name": "SpinachMod",
+  "description": "A NitroBolt mod with many changes that builds upon and enhances NitroBolt with many useful features.",
   "icons": [
     {
       "src": "images/192.png",
