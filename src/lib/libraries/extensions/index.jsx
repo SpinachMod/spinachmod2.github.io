@@ -52,8 +52,15 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import wirelessIconURL from './wireless.png'; //Taken from CodeCraft
+import jgScratchAuthExtensionIcon from './scratchauth2.svg';
+
 import nbIcon from './nb/nb.svg';
+import smIcon from './sm/sm.svg';
 import customExtensionIcon from './custom/custom.svg';
+import galleryIconPOT from './gallery/gallery-pot.svg';
+import galleryIconGM from './gallery/gallery-gm.png';
+import galleryIconBilup from './gallery/gallery-bilup.svg';
 import galleryIconNB from './gallery/gallery-nb.svg';
 import galleryIconTW from './gallery/gallery-tw.svg';
 import {APP_NAME} from '../../brand';
@@ -387,8 +394,8 @@ export default [
     {
         name: (
             <FormattedMessage
-                defaultMessage="{APP_NAME} Blocks"
-                description="Name of the strange 'NitroBolt Blocks' extension"
+                defaultMessage="SpinachMod Blocks"
+                description="Name of the strange 'SpinachMod Blocks' extension"
                 id="tw.twExtension.name"
                 values={{
                     APP_NAME
@@ -400,12 +407,12 @@ export default [
         description: (
             <FormattedMessage
                 defaultMessage="Weird new blocks."
-                description="Description of the strange 'NitroBolt Blocks' extension"
+                description="Description of the strange 'SpinachMod Blocks' extension"
                 id="tw.twExtension.description"
             />
         ),
         incompatibleWithScratch: true,
-        tags: ['nb'],
+        tags: ['sm'],
         featured: true
     },
     {
@@ -425,13 +432,31 @@ export default [
                 id="tw.customExtension.description"
             />
         ),
-        tags: ['nb', 'tw'],
+        tags: ['nb', 'sm', 'tw'],
         featured: true
         // Not marked as incompatible with Scratch so that clicking on it doesn't show a prompt
     }
 ];
 
 const gallerySourceDisplay = {
+    potentiamod: {
+        name: 'PotentiaMod Extension Bonanza',
+        href: 'https://potentiamod.github.io/extensions/',
+        iconURL: galleryIconPOT,
+        tag: 'pot'
+    },
+    gaiamod: {
+        name: 'GaiaMod Extension Gallery',
+        href: 'https://gaiawindwave90.github.io/gm-extensions/',
+        iconURL: galleryIconGM,
+        tag: 'gm'
+    },
+    bilup: {
+        name: 'Bilup Extension Gallery',
+        href: 'https://extensions.bilup.org/',
+        iconURL: galleryIconBilup,
+        tag: 'bl'
+    },
     nitrobolt: {
         name: 'NitroBolt Extension Gallery',
         href: 'https://extensions.nitrobolt.org/',
@@ -460,6 +485,21 @@ const createGalleryStatusItem = (sourceId, description) => {
 };
 
 export const galleryStatusItems = {
+    potentiamod: {
+        loading: createGalleryStatusItem('potentiamod', 'Loading PotentiaMod extension gallery...'),
+        more: createGalleryStatusItem('potentiamod', 'Learn more about extensions at potentiamod.github.io/extensions.'),
+        error: createGalleryStatusItem('potentiamod', 'Error loading PotentiaMod extension gallery. Visit potentiamod.github.io/extensions to find more extensions.')
+    },
+	gaiamod: {
+        loading: createGalleryStatusItem('gaiamod', 'Loading GaiaMod extension gallery...'),
+        more: createGalleryStatusItem('gaiamod', 'Learn more about extensions at gaiawindwave90.github.io/gm-extensions.'),
+        error: createGalleryStatusItem('gaiamod', 'Error loading GaiaMod extension gallery. Visit gaiawindwave90.github.io/gm-extensions to find more extensions.')
+    },
+    bilup: {
+        loading: createGalleryStatusItem('bilup', 'Loading NitroBolt extension gallery...'),
+        more: createGalleryStatusItem('bilup', 'Learn more about extensions at extensions.bilup.org.'),
+        error: createGalleryStatusItem('bilup', 'Error loading NitroBolt extension gallery. Visit extensions.bilup.org to find more extensions.')
+    },
     nitrobolt: {
         loading: createGalleryStatusItem('nitrobolt', 'Loading NitroBolt extension gallery...'),
         more: createGalleryStatusItem('nitrobolt', 'Learn more about extensions at extensions.nitrobolt.org.'),
