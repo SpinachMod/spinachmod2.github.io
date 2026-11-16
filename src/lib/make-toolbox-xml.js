@@ -1015,11 +1015,11 @@ const myBlocks = function (isInitialSetup, isStage, targetId, colors) {
 };
 
 // eslint-disable-next-line max-len
-const nbBlocksColours = `colourmutprimary="#ff5726" colourmutsecondary="#f34b1a" colourmuttertiary="#e63e0d" colourmutquaternary="#e63e0d"`;
+const nbBlocksColours = `colourmutprimary="#00B208" colourmutsecondary="#009600" colourmuttertiary="#006900" colourmutquaternary="#006900"`;
 // eslint-disable-next-line max-len
-const extraNitroBoltBlocks = `
+const extraSpinachModBlocks = `
 <block type="argument_reporter_boolean"><field name="VALUE">is compiled?</field><mutation ${nbBlocksColours}></mutation></block>
-<block type="argument_reporter_boolean"><field name="VALUE">is NitroBolt?</field><mutation ${nbBlocksColours}></mutation></block>
+<block type="argument_reporter_boolean"><field name="VALUE">is SpinachMod?</field><mutation ${nbBlocksColours}></mutation></block>
 `;
 /* eslint-enable no-unused-vars */
 
@@ -1081,8 +1081,8 @@ const makeToolboxXML = function (vm, isInitialSetup, isStage = true, targetId, c
     const myBlocksXML = moveCategory('procedures') || myBlocks(isInitialSetup, isStage, targetId, colors.more, nbBlocks);
 
     let nitroboltXML = moveCategory('tw'); // legacy id
-    if (nitroboltXML && !nitroboltXML.includes(extraNitroBoltBlocks)) {
-        nitroboltXML = nitroboltXML.replace('<block', `${extraNitroBoltBlocks}<block`);
+    if (nitroboltXML && !nitroboltXML.includes(extraSpinachModBlocks)) {
+        nitroboltXML = nitroboltXML.replace('<block', `${extraSpinachModBlocks}<block`);
     }
 
     const categoryEntries = [
@@ -1136,7 +1136,7 @@ makeToolboxXML.exports = {
     xmlOpen,
     xmlClose,
     nbBlocksColours,
-    extraNitroBoltBlocks,
+    extraSpinachModBlocks,
 
     motion,
     looks,
