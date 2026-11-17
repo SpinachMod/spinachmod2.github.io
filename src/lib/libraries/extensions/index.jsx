@@ -108,6 +108,47 @@ export default [
         tags: ['scratch'],
         featured: true
     },
+	/*
+	{
+        name: (
+            <FormattedMessage
+                defaultMessage="Wireless"
+                description="Name for the Wireless extension"
+                id="gui.extension.wireless.name"
+            />
+        ),
+        extensionId: 'scratch3Wireless',
+        iconURL: wirelessIconURL, //Taken from CodeCraft
+        description: (
+            <FormattedMessage
+                defaultMessage="Communicate with wireless."
+                description="Description for the Wireless extension"
+                id="gui.extension.wireless.description"
+            />
+        ),
+        tags: ['sm'],
+        featured: true
+    },
+    {
+        name: 'Scratch Authentication',
+        extensionId: 'jgScratchAuth',
+        iconURL: jgScratchAuthExtensionIcon,
+		collaborator: 'PenguinMod',
+		tags: ['sm'],
+        description: "Interact with Scratch Authentication to prove the player is a real scratch user.",
+        featured: true
+    },
+    {
+        name: 'Ada Browser',
+        tags: ['sm'],
+        extensionId: 'adabrowser',
+        iconURL: 'https://www.adacraft.org/studio/static/assets/40998229311219c2117265d5e4bd9745.png',
+        insetIconURL: 'https://www.adacraft.org/studio/static/assets/f1fe0bbe960a0d60c783b111c84b837e.svg',
+        description: 'Some new blocks to interact with the browser',
+        collaborator: 'Adacraft',
+        featured: true
+    },
+	*/
     {
         name: (
             <FormattedMessage
