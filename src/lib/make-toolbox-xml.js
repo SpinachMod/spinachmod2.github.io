@@ -1043,7 +1043,7 @@ const xmlClose = '</xml>';
  * @param {?string} assetName - The name of the default selected asset dropdown.
  * @param {?object} colors - The colors for the theme.
  * @param {?Array.<object>} hiddenCategories - optional array of category IDs to hide.
- * @param {?boolean} nbBlocks - Whether to keep NitroBolt only blocks in categories.
+ * @param {?boolean} nbBlocks - Whether to keep SpinachMod only blocks in categories.
  * @returns {string} - a ScratchBlocks-style XML document for the contents of the toolbox.
  */
 const makeToolboxXML = function (vm, isInitialSetup, isStage = true, targetId, categoriesXML = [],
