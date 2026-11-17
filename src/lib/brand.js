@@ -1,5 +1,6 @@
 // Legacy export format because this is used by some build-time scripts stuck in the past.
 // eslint-disable-next-line import/no-commonjs
 module.exports = {
-    APP_NAME: 'SpinachMod'
+    APP_NAME: 'SpinachMod',
+    APP_MOTTO: 'Into the World of Fun and Games!'
 };
