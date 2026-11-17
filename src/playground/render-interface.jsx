@@ -41,13 +41,13 @@ import {isBrowserSupported} from '../lib/tw-environment-support-prober';
 import AddonChannels from '../addons/channels';
 import {loadServiceWorker} from './load-service-worker';
 import runAddons from '../addons/entry';
-import {APP_NAME} from '../lib/brand.js';
+import {APP_NAME, APP_MOTTO} from '../lib/brand.js'
 
 import styles from './interface.css';
 
 const messages = defineMessages({
     defaultTitle: {
-        defaultMessage: 'The World of Fun and Games!', // TODO: Temporary?
+        defaultMessage: 'Into the World of Fun and Games!', // TODO: Temporary?
         description: 'Title of homepage',
         id: 'tw.guiDefaultTitle'
     }
