@@ -1,6 +1,6 @@
 const manifest = {
   "name": "Background",
-  "description": "Make your editor look brand new. Originally from Astra Editor.",
+  "description": "Make your editor look brand new.",
   "editorOnly": true,
   "tags": [
     "astraeditor",
@@ -10,7 +10,7 @@ const manifest = {
   "info": [
     {
       "type": "notice",
-      "text": "This may reduce performance!",
+      "text": "This may reduce performance.",
       "id": "reducePerformance"
     }
   ],
