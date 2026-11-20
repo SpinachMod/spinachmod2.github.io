@@ -759,6 +759,7 @@ const operators = function (isInitialSetup, isStage, targetId, colors, nbBlocks 
                 </shadow>
               </value>
             </block>
+            ${nbBlocks ? `<block type="operator_constant_text"/>` : ''}
         `}
         ${blockSeparator}
         <block type="operator_mod">
